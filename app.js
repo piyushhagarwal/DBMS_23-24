@@ -4,6 +4,8 @@ const express = require("express");
 const app = express();
 const connectDB = require("./db/connect");
 
+const CategoriesRoute = require("./routes/getCategories");
+
 const cors = require("cors");
 
 app.use(cors());
@@ -12,6 +14,8 @@ app.use(express.json());
 // extra packages
 
 // routes
+
+app.use("/api/v1/categories", CategoriesRoute);
 
 const port = process.env.PORT || 8080;
 
