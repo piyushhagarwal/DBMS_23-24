@@ -1,4 +1,4 @@
-export let English = [
+const English = [
   {
     catName: "Women Rights",
     catDesc:
@@ -751,89 +751,7 @@ export let English = [
       },
     ],
   },
-  {
-    catName: "Protestors' Rights",
-    catDesc:
-      "Learn more about your right to peaceful protest and assembly, and how you can be safeguarded against discrimination while exercising this fundamental right.",
-    id: 10,
-    catQues: [
-      {
-        q: "I've participated in public protests for my cause.",
-        ans: [
-          {
-            heading: "Freedom of Assembly",
-            description:
-              "In India, citizens have the constitutional right to peacefully assemble and protest, as long as it is done without violence or incitement to violence. You can participate in public protests to voice your concerns and advocate for your cause within the boundaries of the law.",
-          },
-          {
-            heading: "Prior Notification",
-            description:
-              "In some Indian states, it may be necessary to notify local authorities about your intent to hold a public protest in advance. Make sure to check the specific regulations in your area and follow any required procedures to ensure your protest is conducted legally.",
-          },
-        ],
-      },
-      {
-        q: "I've been present at peaceful demonstrations and gatherings.",
-        ans: [
-          {
-            heading: "Right to Peaceful Assembly",
-            description:
-              "In India, citizens have the constitutionally protected right to peaceful assembly and protest. This means you can join peaceful demonstrations and gatherings to express your views and opinions.",
-          },
-          {
-            heading: "Exercise Caution",
-            description:
-              "While participating in protests, it's important to exercise caution and follow the law. Avoid engaging in any violent activities or actions that can lead to disruption. Remember that peaceful protests are protected, but unlawful activities may lead to legal consequences.",
-          },
-        ],
-      },
-      {
-        q: "I'm encountering a situation where law enforcement is monitoring protests.",
-        ans: [
-          {
-            heading: "Right to Peaceful Protest",
-            description:
-              "In India, citizens have the fundamental right to peaceful assembly and protest as guaranteed by the Constitution. You can participate in peaceful protests to voice your concerns or opinions.",
-          },
-          {
-            heading: "Know Your Limits",
-            description:
-              "While you have the right to protest, it should be done peacefully and within the boundaries of the law. Avoid engaging in any violent or unlawful activities during protests to ensure your rights are protected.",
-          },
-        ],
-      },
-      {
-        q: "I've been detained or arrested while exercising my right to protest.",
-        ans: [
-          {
-            heading: "Right to Legal Representation",
-            description:
-              "In India, if you've been detained or arrested during a protest, you have the right to legal representation. You can request to have a lawyer present during any questioning or legal proceedings. It is advisable to exercise this right to ensure your interests are protected.",
-          },
-          {
-            heading: "Right to Know the Charges",
-            description:
-              "Upon detention or arrest, you have the right to be informed of the charges against you. The police must provide you with a clear understanding of why you have been detained or arrested. This information is crucial for you to exercise your legal rights effectively.",
-          },
-        ],
-      },
-      {
-        q: "I believe my rights as a protester have been infringed upon by law enforcement.",
-        ans: [
-          {
-            heading: "Right to Freedom of Speech and Expression",
-            description:
-              "In India, protesters have the fundamental right to freedom of speech and expression under Article 19(1)(a) of the Constitution. This includes the right to peacefully protest and express dissent, as long as it is done in a non-violent manner and does not incite violence or public disorder.",
-          },
-          {
-            heading: "Right to Peaceful Assembly",
-            description:
-              "Indian citizens also have the right to peacefully assemble and protest, as guaranteed by Article 19(1)(b) of the Constitution. Law enforcement should respect this right and ensure that protests are allowed to take place without undue interference, as long as they remain peaceful and within the bounds of the law.",
-          },
-        ],
-      },
-    ],
-  },
+
   {
     catName: "Disability Rights",
     catDesc:
@@ -919,3 +837,5 @@ export let English = [
     ],
   },
 ];
+
+module.exports = { English };
