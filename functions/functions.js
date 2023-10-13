@@ -2,15 +2,27 @@ const mongoose = require("mongoose");
 const Category = require("../models/category");
 const Question = require("../models/English");
 const { English } = require("./englishData");
+const { Hindi } = require("./hindiData");
+
 const insertCategory = async () => {
   try {
-    const categoryDocs = English.map(({ catName, catDesc }) => ({
+    //Adding English Data
+    // const categoryDocsEnglish = English.map(({ catName, catDesc }) => ({
+    //   name: catName,
+    //   description: catDesc,
+    //   language: "English",
+    // }));
+
+    // await Category.insertMany(categoryDocsEnglish);
+
+    //Adding Hindi Data
+    const categoryDocsHindi = Hindi.map(({ catName, catDesc }) => ({
       name: catName,
       description: catDesc,
-      language: "English",
+      language: "Hindi",
     }));
 
-    await Category.insertMany(categoryDocs);
+    await Category.insertMany(categoryDocsHindi);
 
     console.log("Data Inserted Successfully");
   } catch (error) {
