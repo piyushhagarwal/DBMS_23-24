@@ -7,13 +7,13 @@ const { Hindi } = require("./hindiData");
 const insertCategory = async () => {
   try {
     //Adding English Data
-    // const categoryDocsEnglish = English.map(({ catName, catDesc }) => ({
-    //   name: catName,
-    //   description: catDesc,
-    //   language: "English",
-    // }));
+    const categoryDocsEnglish = English.map(({ catName, catDesc }) => ({
+      name: catName,
+      description: catDesc,
+      language: "English",
+    }));
 
-    // await Category.insertMany(categoryDocsEnglish);
+    await Category.insertMany(categoryDocsEnglish);
 
     //Adding Hindi Data
     const categoryDocsHindi = Hindi.map(({ catName, catDesc }) => ({
