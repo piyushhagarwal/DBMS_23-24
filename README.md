@@ -1,5 +1,11 @@
 # DBMS_23-24
 
+## How to start the application
+
+```bash
+node app.js
+```
+
 #### Get Categories
 
 **Endpoint:** `GET /api/v1/categories`
