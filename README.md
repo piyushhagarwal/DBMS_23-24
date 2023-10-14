@@ -1,4 +1,7 @@
-# DBMS_23-24
+# DBMS_23-24 (Know Your Rights)
+
+The "Know Your Rights" project aims to empower individuals by providing comprehensive information about their rights across various categories. Whether you're looking for rights related to gender, age, occupation, or language preferences, this API is designed to deliver accurate and relevant data.
+
 
 ## How to start the application
 
