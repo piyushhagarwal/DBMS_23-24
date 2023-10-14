@@ -12,11 +12,12 @@
 - `age` (Number, required): The age for filtering categories.
 - `occupation` (String, required): The occupation for filtering categories.
 - `disable` (Boolean, required): Indicates if the category is disabled.
+- `language` (String, required): "English" or "Hindi"
 
 ##### Example Usage
 
 ```bash
-curl -X GET "localhost:8080/api/v1/categories?gender=Women&age=62&occupation=Student&disable=true"
+curl -X GET "localhost:8080/api/v1/categories?gender=Women&age=62&occupation=Student&disable=true&language=Hindi"
 ```
 
 #### Get Categories
