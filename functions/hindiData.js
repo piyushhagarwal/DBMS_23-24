@@ -1,4 +1,4 @@
-export let Hindi = [
+const Hindi = [
   {
     catName: "महिला अधिकार",
     catDesc:
@@ -916,3 +916,5 @@ export let Hindi = [
     ],
   },
 ];
+
+module.exports = { Hindi };
