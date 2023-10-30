@@ -31,9 +31,34 @@ const insertCategory = async () => {
 };
 
 const insertQuestions = async () => {
+  // Adding English Data
   try {
     const categoryDocs = await Category.find();
     const questionDocs = English.map(({ catName, catQues }) => {
+      const category = categoryDocs.find(
+        (category) => category.name === catName
+      );
+
+      return catQues.map(({ q, ans }) => ({
+        q,
+        ans,
+        category: category._id,
+      }));
+    });
+
+    const flatQuestionDocs = questionDocs.flat();
+
+    await Question.insertMany(flatQuestionDocs);
+
+    console.log("Data Inserted Successfully");
+  } catch (error) {
+    console.error(error);
+  }
+
+  // Adding Hindi Data
+  try {
+    const categoryDocs = await Category.find();
+    const questionDocs = Hindi.map(({ catName, catQues }) => {
       const category = categoryDocs.find(
         (category) => category.name === catName
       );
