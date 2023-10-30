@@ -2,7 +2,7 @@
 
 The "Know Your Rights" project aims to empower individuals by providing comprehensive information about their rights across various categories. Whether you're looking for rights related to gender, age, occupation, or language preferences, this API is designed to deliver accurate and relevant data.
 
-
+## [Frontend Repository](https://github.com/piyushhagarwal/DBMS_23-24Frontend)
 ## How to start the application
 
 ```bash
