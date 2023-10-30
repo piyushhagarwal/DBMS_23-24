@@ -4,7 +4,7 @@ const express = require("express");
 const app = express();
 const connectDB = require("./db/connect");
 
-const { insertCategory } = require("./functions/functions");
+const { insertCategory, insertQuestions } = require("./functions/functions");
 
 const CategoriesRoute = require("./routes/getCategories");
 const RightsRoute = require("./routes/getRights");
@@ -26,7 +26,8 @@ const port = process.env.PORT || 8080;
 const start = async () => {
   try {
     await connectDB(process.env.MONGO_URI);
-    // await insertCategory();
+    // await insertCategory();  // uncomment this line to insert data
+    // await insertQuestions();
     app.listen(port, () =>
       console.log(`Server is listening on port ...${port}`)
     );

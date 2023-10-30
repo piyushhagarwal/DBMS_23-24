@@ -6,6 +6,15 @@
 node app.js
 ```
 
+## How to insert data into the database
+
+Uncomment the given two lines in `app.js`
+
+```bash
+await insertCategory();
+await insertQuestions();
+```
+
 #### Get Categories
 
 **Endpoint:** `GET /api/v1/categories`

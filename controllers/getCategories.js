@@ -20,7 +20,7 @@ const getCategories = async (req, res) => {
       if (gender === "Women") {
         categories.push("Women Rights");
       } else if (gender === "Other") {
-        categories.push("LGBTQ Rights");
+        categories.push("LQBTQ Rights");
       }
 
       if (occupation === "Student") {
